@@ -1,5 +1,5 @@
 
-const socket = io('http://localhost:8080');
+const socket = io('http://localhost:10000');
 
 const form = document.getElementById('send-container')
 
