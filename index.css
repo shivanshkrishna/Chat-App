@@ -1,85 +1,106 @@
 .logo {
-    display: block;
-    margin: auto;
-    width: 50px;
-    height: 50px;
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 50px;
 }
 
 body {
-    height: 100vh;
-    /* background-image: linear-gradient(rgb(48, 49, 150), rgb(16, 4, 99)); */
-    background-color: #011F3F;
+  height: 100vh;
+  /* background-image: linear-gradient(rgb(48, 49, 150), rgb(16, 4, 99)); */
+  /* background-color: #011f3f; */
+  /* background: url('bgcyberchat.mp4'); */
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 H1 {
-    margin-top: 12px;
-    font-size: 30px;
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
-    color: #FEF2BF;
+  margin-top: 12px;
+  font-size: 30px;
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  color: #fef2bf;
 }
 
 .container {
-    max-width: 955px;
-    border: 2px solid rgb(115, 98, 0);
-    border-radius: 14px;
-    margin: auto;
-    height: 60vh;
-    overflow-y: auto;
-    margin-bottom: 23px;
-
-
+  max-width: 955px;
+  border: 2px solid rgb(115, 98, 0);
+  border-radius: 14px;
+  margin: auto;
+  height: 60vh;
+  overflow-y: auto;
+  margin-bottom: 23px;
+  overflow: hidden;
 }
 
 .message {
-    background-color: #8d8181;
-    width: 24%;
-    padding: 10px;
-    margin: 17px 12px;
-    border: 2px solid black;
-    border-radius: 10px;
-    font-family: 'Press Start 2P',
-        cursive;
-    font-size: small;
+  background-color: #8d8181;
+  width: 24%;
+  padding: 10px;
+  margin: 17px 12px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: "Press Start 2P", cursive;
+  font-size: small;
 }
 
 .left {
-    float: left;
-    clear: both;
+  background: #0e0067;
+  color: rgb(250, 251, 254);
+  float: left;
+  clear: both;
 }
 
 .right {
-    float: right;
-    clear: both;
+  float: right;
+  clear: both;
 }
 
 #send-container {
-    display: block;
-    text-align: center;
-    max-width: 1031px;
-    width: 100%;
-    margin: auto;
-
+  display: block;
+  text-align: center;
+  max-width: 1031px;
+  width: 100%;
+  margin: auto;
 }
 
 #messageinp {
-    width: 87%;
-    border: 2px solid black;
-    border-radius: 104px;
-    height: 34px;
-    font-family: 'Press Start 2P',
-        cursive;
+  width: 87%;
+  border: 2px solid black;
+  border-radius: 104px;
+  height: 34px;
+  font-family: "Press Start 2P", cursive;
 }
 
 .btn {
-    cursor: pointer;
-    border: 2px solid black;
-    border-radius: 40px;
-    color: rgb(21, 20, 20);
-    background-color: #FEF2BF;
-    width: 17%;
-    height: 34px;
-    margin-top: 4px;
-    font-family: 'Press Start 2P',
-        cursive;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 40px;
+  color: rgb(21, 20, 20);
+  background-color: #fef2bf;
+  width: 17%;
+  height: 34px;
+  margin-top: 4px;
+  font-family: "Press Start 2P", cursive;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 90%; /* Adjust container width for smaller screens */
+  }
+  .message {
+    width: 90%; /* Adjust message width for smaller screens */
+    margin: 17px auto; /* Center message horizontally */
+  }
 }
