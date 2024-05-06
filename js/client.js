@@ -39,7 +39,7 @@ socket.emit('new-user-joined', name)
 
 
 socket.on('user-joined', data => {
-    append(`${name} joined the chat`, 'right')
+    append(`${name} joined the chat`, 'left')
 })
 
 
