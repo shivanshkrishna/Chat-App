@@ -7,10 +7,8 @@
 
 body {
   height: 100vh;
-  /* background-image: linear-gradient(rgb(48, 49, 150), rgb(16, 4, 99)); */
-  /* background-color: #011f3f; */
-  /* background: url('bgcyberchat.mp4'); */
-
+  background: url("https://cdn.pixabay.com/photo/2018/03/31/20/47/galaxy-3279274_1280.jpg")
+    center center/cover no-repeat; /* Center the image horizontally and vertically, cover the entire viewport */
   margin: 0;
   padding: 0;
   overflow: hidden;
